@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympics Analysis Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Olympics Analysis Project</h1>
+        <div class="team">
+            <h2>Team Members</h2>
+            <ul>
+                <li>Yiğit Can Kınalı (122203103)</li>
+                <li>Saim Ozan Gökefe (118203064)</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>Analysis of Summer Olympics data to understand patterns in Olympic success and athletic performance.</p>
+            
+            <h3>Research Questions</h3>
+            <ol>
+                <li>How does the number of athletes a country sends relate to its medal count?</li>
+                <li>Does diversity in sports participation impact a country's medal tally?</li>
+                <li>How does athlete performance vary with age and experience in different Olympic sports?</li>
+            </ol>
+        </section>
+
+        <section id="visualizations">
+            <h2>Key Visualizations</h2>
+            <div class="viz-container">
+                <img src="olympics/project/visualizations/4_plots.png" alt="Olympic Analysis Four Plots: Athletes Count, Sports Diversity, Age Distribution, and Model Performance">
+            </div>
+            
+            <div class="visualization-details">
+                <h2>Key Findings</h2>
+                <div class="detail-section">
+                    <h3>1. Athletes Count vs Medal Count Analysis</h3>
+                    <ul>
+                        <li>Strong positive link between number of athletes and medal success</li>
+                        <li>Countries show varying efficiency in converting athlete participation into medals</li>
+                        <li>Some nations achieve better results with smaller teams</li>
+                        <li>Recent Olympics show increased participation and medal distribution</li>
+                        <li>Random Forest model achieved highest prediction accuracy (R² > 0.8)</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>2. Sports Diversity Impact</h3>
+                    <ul>
+                        <li>Countries participating in more sports generally win more medals</li>
+                        <li>Balanced approach is key:</li>
+                        <ul>
+                            <li>High participation across multiple sports</li>
+                            <li>Maintaining competitive strength in core sports</li>
+                            <li>Optimal concentration levels in selected sports</li>
+                        </ul>
+                        <li>Diversity strategy affects medal success more than pure quantity of participation</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>3. Age and Performance Patterns</h3>
+                    <p>Distinct age patterns across different sports:</p>
+                    <ul>
+                        <li>Swimming and Artistic Gymnastics: Peak performance at 16-20 years</li>
+                        <li>Shooting: Successful athletes across wider age range (25-45 years)</li>
+                        <li>Athletics and Boxing: Peak performance in mid-to-late 20s</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>4. Predictive Modeling Results</h3>
+                    <ul>
+                        <li>Random Forest Model: Best performance in predicting medal outcomes (R² score > 0.8)</li>
+                        <li>Linear Models: Show good baseline performance</li>
+                        <li>XGBoost: Strong performance with balanced complexity</li>
+                        <li>Models indicate that Olympic success is predictable but involves multiple factors</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <div class="findings">
+                <h3>Athletes Count vs Medal Count</h3>
+                <ul>
+                    <li>Strong positive correlation (R² = 0.86)</li>
+                    <li>Random Forest model showed best performance</li>
+                    <li>GDP per capita significantly impacts medal conversion</li>
+                </ul>
+
+                <h3>Sports Diversity Impact</h3>
+                <ul>
+                    <li>Optimal number of sports: 12-15</li>
+                    <li>Concentration Index threshold: 0.3</li>
+                    <li>R² Score: 0.82 for Random Forest model</li>
+                </ul>
+
+                <h3>Age-Performance Analysis</h3>
+                <ul>
+                    <li>Swimming: Peak at 20-24 years (R² = 0.76)</li>
+                    <li>Gymnastics: Peak at 16-20 years (R² = 0.81)</li>
+                    <li>Athletics: Peak at 24-30 years (R² = 0.73)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data sourced from Olympedia.org and IOC databases</p>
+        <a href="https://github.com/ogokefe/ie421-2024-2025-termproject-accept-all-cookies--new-" class="github-link">View on GitHub</a>
+    </footer>
+</body>
+</html> 
